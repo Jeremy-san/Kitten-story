@@ -1,0 +1,15 @@
+<div class='container'>
+  <ul *ngFor='let o of chatons; let i =index'>
+    <li>
+      <h4>Nom : {{ o.name }} -- Race :  {{ o.race }} -- Date de naissance : {{o.date}}</h4>
+    </li>
+    </ul>
+    <div>
+      <app-user-kitten></app-user-kitten>
+    </div>
+    <button class=" col-8 mt-2"
+      type="submit"
+      (click)="addKitten()"
+      >ADOPTEZ MOI
+    </button>
+</div>

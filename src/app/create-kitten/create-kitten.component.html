@@ -1,0 +1,40 @@
+<h2>Les chatons</h2>
+
+<form (ngSubmit)="createKitten()" #createKittenForm="ngForm">
+  <input
+    type='text'
+    id='name'
+    [(ngModel)]='kittens.name'
+    name='name-kitten'
+    #name = 'ngModel'
+    placeholder="name"
+  >
+  <br>
+  <input
+    type='text'
+    id='race'
+    [(ngModel)]='kittens.race'
+    name='race-kitten'
+    #race = 'ngModel'
+    placeholder="race"
+  >
+  <br>
+  <input
+    type='date'
+    id='birthday'
+    [(ngModel)]='kittens.date'
+    name='date-kitte'
+    #date = 'ngModel'
+    placeholder="birthday"
+  >
+  <br>
+  <button
+    type='submit'
+    >
+    Ajouter
+  </button>
+  <br>
+</form>
+
+
+
